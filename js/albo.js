@@ -62,8 +62,6 @@ function renderCup(x, t, st) {
     <div>
       <strong>${getTeamName(t[x.coppa], x.anno)}</strong>
       <small>
-        Vincitore coppa
-        &nbsp·&nbsp
         Secondo classificato <b>${getTeamName(t[x.secondocoppa], x.anno)}</b>
       </small>
     </div>
