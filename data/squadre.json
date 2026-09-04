@@ -1,0 +1,54 @@
+{
+  "squadre": [
+    {
+      "id": "ac-campati",
+      "nome": "AC campati",
+      "abbreviazione": "ACC"
+    },
+    {
+      "id": "the-notorious-tmb",
+      "nome": "The Notorious TMB",
+      "abbreviazione": "TMB"
+    },
+    {
+      "id": "real-spansettek",
+      "nome": "Real Spansettek",
+      "abbreviazione": "RSP"
+    },
+    {
+      "id": "naples1926",
+      "nome": "NAPLES1926",
+      "abbreviazione": "NAP"
+    },
+    {
+      "id": "dea-team",
+      "nome": "DEA TEAM",
+      "abbreviazione": "DEA"
+    },
+    {
+      "id": "aston-birra",
+      "nome": "Aston Birra",
+      "abbreviazione": "AST"
+    },
+    {
+      "id": "bayer-semperduren",
+      "nome": "Bayer semperduren",
+      "abbreviazione": "BSD"
+    },
+    {
+      "id": "isotopi",
+      "nome": "isotopi",
+      "abbreviazione": "ISO"
+    },
+    {
+      "id": "team-rex",
+      "nome": "Team Rex",
+      "abbreviazione": "REX"
+    },
+    {
+      "id": "cn-69",
+      "nome": "CN 69",
+      "abbreviazione": "C69"
+    }
+  ]
+}

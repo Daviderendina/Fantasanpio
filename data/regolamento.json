@@ -1,0 +1,56 @@
+{
+  "categorie": [
+    {
+      "id": "generale",
+      "nome": "Generale"
+    },
+    {
+      "id": "asta",
+      "nome": "Asta"
+    },
+    {
+      "id": "formazioni",
+      "nome": "Formazioni"
+    },
+    {
+      "id": "mercato",
+      "nome": "Mercato"
+    },
+    {
+      "id": "coppa",
+      "nome": "Coppa"
+    }
+  ],
+  "regole": [
+    {
+      "id": 1,
+      "categoria": "generale",
+      "titolo": "Composizione della lega",
+      "descrizione": "La lega è composta da 8 squadre. Ogni squadra affronta le altre durante la stagione."
+    },
+    {
+      "id": 2,
+      "categoria": "asta",
+      "titolo": "Asta iniziale",
+      "descrizione": "Ogni fantallenatore parte con 500 crediti e deve costruire una rosa completa."
+    },
+    {
+      "id": 3,
+      "categoria": "formazioni",
+      "titolo": "Consegna della formazione",
+      "descrizione": "La formazione deve essere consegnata entro l'inizio della prima partita della giornata."
+    },
+    {
+      "id": 4,
+      "categoria": "mercato",
+      "titolo": "Mercato di riparazione",
+      "descrizione": "Sono previste finestre di mercato durante la stagione. Le date vengono comunicate dalla lega."
+    },
+    {
+      "id": 5,
+      "categoria": "coppa",
+      "titolo": "Formato della Coppa",
+      "descrizione": "La Coppa si disputa con una fase a eliminazione secondo il calendario definito a inizio stagione."
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "stagioni": [
+    {
+      "anno": "2025/26",
+      "campione": "isotopi",
+      "secondo": "the-notorious-tmb",
+      "terzo": "aston-birra",
+      "coppa": "the-notorious-tmb",
+      "secondo-coppa": "ac-campati",
+      "partecipanti": [
+        "ac-campati",
+        "the-notorious-tmb",
+        "naples1926",
+        "dea-team",
+        "aston-birra",
+        "real-spansettek",
+        "isotopi",
+        "team-rex"
+      ]
+    },
+    {
+      "anno": "2024/25",
+      "campione": "team-rex",
+      "secondo": "aston-birra",
+      "terzo": "isotopi",
+      "coppa": "team-rex",
+      "secondo-coppa": "dea-team",
+      "partecipanti": [
+        "ac-campati",
+        "the-notorious-tmb",
+        "naples1926",
+        "dea-team",
+        "aston-birra",
+        "real-spansettek",
+        "isotopi",
+        "team-rex"
+      ]
+    },
+    {
+      "anno": "2023/24",
+      "campione": "ac-campati",
+      "secondo": "the-notorious-tmb",
+      "terzo": "real-spansettek",
+      "coppa": "ac-campati",
+      "secondo-coppa": "real-spansettek",
+      "partecipanti": [
+        "ac-campati",
+        "the-notorious-tmb",
+        "naples1926",
+        "dea-team",
+        "aston-birra",
+        "real-spansettek",
+        "isotopi",
+        "team-rex"
+      ]
+    },
+    {
+      "anno": "2022/23",
+      "campione": "ac-campati",
+      "secondo": "the-notorious-tmb",
+      "terzo": "naples1926",
+      "coppa": "real-spansettek",
+      "secondo-coppa": "aston-birra",
+      "partecipanti": [
+        "ac-campati",
+        "the-notorious-tmb",
+        "naples1926",
+        "dea-team",
+        "aston-birra",
+        "real-spansettek",
+        "isotopi",
+        "team-rex"
+      ]
+    },
+    {
+      "anno": "2021/22",
+      "campione": "the-notorious-tmb",
+      "secondo": "naples1926",
+      "terzo": "ac-campati",
+      "coppa": "naples1926",
+      "secondo-coppa": "the-notorious-tmb",
+      "partecipanti": [
+        "ac-campati",
+        "the-notorious-tmb",
+        "naples1926",
+        "dea-team",
+        "aston-birra",
+        "real-spansettek",
+        "isotopi",
+        "team-rex"
+      ]
+    },
+    {
+      "anno": "2020/21",
+      "campione": "dea-team",
+      "secondo": "real-spansettek",
+      "terzo": "naples1926",
+      "coppa": "dea-team",
+      "secondo-coppa": "team-rex",
+      "partecipanti": [
+        "ac-campati",
+        "the-notorious-tmb",
+        "naples1926",
+        "dea-team",
+        "aston-birra",
+        "real-spansettek",
+        "isotopi",
+        "team-rex"
+      ]
+    },
+    {
+      "anno": "2019/20",
+      "campione": "aston-birra",
+      "secondo": "bayer-semperduren",
+      "terzo": "ac-campati",
+      "partecipanti": [
+        "ac-campati",
+        "the-notorious-tmb",
+        "naples1926",
+        "dea-team",
+        "aston-birra",
+        "bayer-semperduren",
+        "isotopi",
+        "team-rex"
+      ],
+      "note": "Stagione stoppata"
+    },
+    {
+      "anno": "2018/19",
+      "campione": "dea-team",
+      "secondo": "ac-campati",
+      "terzo": "naples1926",
+      "partecipanti": [
+        "ac-campati",
+        "the-notorious-tmb",
+        "naples1926",
+        "dea-team",
+        "aston-birra",
+        "bayer-semperduren",
+        "isotopi",
+        "team-rex"
+      ]
+    },
+    {
+      "anno": "2017/18",
+      "campione": "ac-campati",
+      "secondo": "aston-birra",
+      "terzo": "bayer-semperduren",
+      "partecipanti": [
+        "ac-campati",
+        "the-notorious-tmb",
+        "naples1926",
+        "dea-team",
+        "aston-birra",
+        "bayer-semperduren",
+        "isotopi",
+        "team-rex"
+      ]
+    },
+    {
+      "anno": "2016/17",
+      "campione": "ac-campati",
+      "secondo": "isotopi",
+      "terzo": "naples1926",
+      "partecipanti": [
+        "ac-campati",
+        "the-notorious-tmb",
+        "naples1926",
+        "dea-team",
+        "aston-birra",
+        "bayer-semperduren",
+        "isotopi",
+        "team-rex"
+      ]
+    },
+    {
+      "anno": "2015/16",
+      "campione": "naples1926",
+      "secondo": "team-rex",
+      "terzo": "ac-campati",
+      "partecipanti": [
+        "ac-campati",
+        "the-notorious-tmb",
+        "naples1926",
+        "dea-team",
+        "aston-birra",
+        "bayer-semperduren",
+        "isotopi",
+        "team-rex"
+      ]
+    },
+    {
+      "anno": "2014/15",
+      "campione": "naples1926",
+      "secondo": "ac-campati",
+      "terzo": "team-rex",
+      "partecipanti": [
+        "ac-campati",
+        "cn-69",
+        "naples1926",
+        "dea-team",
+        "aston-birra",
+        "bayer-semperduren",
+        "isotopi",
+        "team-rex"
+      ]
+    }
+  ]
+}

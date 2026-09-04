@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+    --bg: #07111f;
+    --surface: #0d1b2a;
+    --surface2: #12243a;
+    --line: #1e344d;
+    --blue: #2563eb;
+    --cyan: #38bdf8;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --gold: #f5c451;
+    --silver: #b9c3cf;
+    --bronze: #c8875b;
+    --radius: 20px
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    background: var(--bg)
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at 50% -10%, #12335a 0, transparent 38%), var(--bg);
+    color: var(--text);
+    font-family: "DM Sans", system-ui, sans-serif;
+    min-height: 100vh
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.shell {
+    width: min(calc(100% - 32px), 720px);
+    margin: auto
+}
+
+.home {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 44px 0
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 36px
+}
+
+.brand-mark {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--line);
+    background: #0b1b2e;
+    border-radius: 20px;
+    font-size: 27px
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: var(--cyan);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase
+}
+
+.hero h1 {
+    font: 700 clamp(44px, 12vw, 72px)/.95 "Space Grotesk";
+    letter-spacing: -.06em;
+    margin: 0 0 16px
+}
+
+.hero h1 span {
+    color: var(--cyan)
+}
+
+.hero-copy {
+    color: var(--muted);
+    font-size: 15px
+}
+
+.home-actions {
+    display: grid;
+    gap: 12px
+}
+
+.big-action {
+    display: grid;
+    grid-template-columns: 52px 1fr 24px;
+    align-items: center;
+    gap: 14px;
+    padding: 20px;
+    border: 1px solid var(--line);
+    background: linear-gradient(135deg, var(--surface2), var(--surface));
+    border-radius: var(--radius);
+    transition: .2s
+}
+
+.big-action:hover {
+    transform: translateY(-2px)
+}
+
+.action-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    background: #1c4ed01c;
+    display: grid;
+    place-items: center;
+    color: var(--cyan);
+    font-size: 25px
+}
+
+.big-action strong {
+    display: block;
+    font: 600 18px "Space Grotesk";
+    margin-bottom: 3px
+}
+
+.big-action small {
+    color: var(--muted);
+    font-size: 13px
+}
+
+.arrow {
+    color: var(--muted);
+    font-size: 21px
+}
+
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 11px;
+    margin-top: 34px
+}
+
+.page {
+    padding-bottom: 56px
+}
+
+.app-header {
+    height: 72px;
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: #07111fe8;
+    backdrop-filter: blur(14px);
+    z-index: 10
+}
+
+.app-header h1 {
+    text-align: center;
+    font: 600 17px "Space Grotesk";
+    margin: 0
+}
+
+.back {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    font-size: 34px
+}
+
+.page-intro {
+    padding: 36px 0 24px
+}
+
+.page-intro h2 {
+    font: 600 clamp(31px, 8vw, 48px)/1 "Space Grotesk";
+    letter-spacing: -.045em;
+    margin: 0
+}
+
+.chips {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 18px;
+    scrollbar-width: none
+}
+
+.chips::-webkit-scrollbar {
+    display: none
+}
+
+.chip {
+    flex: 0 0 auto;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 9px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer
+}
+
+.chip.active {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: white
+}
+
+.rules {
+    display: grid;
+    gap: 10px
+}
+
+.rule-card {
+    padding: 19px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    border-radius: 18px
+}
+
+.rule-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px
+}
+
+.rule-number {
+    color: #4b6682;
+    font: 600 12px "Space Grotesk"
+}
+
+.rule-category {
+    color: var(--cyan);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase
+}
+
+.rule-card h3 {
+    font: 600 17px/1.2 "Space Grotesk";
+    margin: 0 0 7px
+}
+
+.rule-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0
+}
+
+.section-gap {
+    margin-top: 48px
+}
+
+.section-heading {
+    margin-bottom: 16px
+}
+
+.section-heading h3 {
+    font: 600 24px "Space Grotesk";
+    margin: 0
+}
+
+.podium {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr 1fr;
+    align-items: end;
+    gap: 8px;
+}
+
+.podium-place {
+    text-align: center
+}
+
+.podium-team {
+    font: 600 13px "Space Grotesk";
+    line-height: 1.2;
+    margin-bottom: 8px
+}
+
+.podium-year {
+    color: var(--muted);
+    font-size: 11px;
+    margin-bottom: 8px
+}
+
+.podium-block {
+    width: 100%;
+    border: 1px solid var(--line);
+    border-bottom: 0;
+    border-radius: 16px 16px 0 0;
+    background: var(--surface);
+    display: grid;
+    place-items: center;
+    font: 700 22px "Space Grotesk"
+}
+
+.place-1 .podium-block {
+    height: 112px;
+    color: var(--gold)
+}
+
+.place-2 .podium-block {
+    height: 78px;
+    color: var(--silver)
+}
+
+.place-3 .podium-block {
+    height: 58px;
+    color: var(--bronze)
+}
+
+.medal {
+    font-size: 20px;
+    margin-bottom: 7px
+}
+
+.cup-card {
+    border: 1px solid var(--line);
+    background: linear-gradient(135deg, #152b47, #0d1b2a);
+    border-radius: var(--radius);
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+.cup-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 17px;
+    background: #f5c45116;
+    display: grid;
+    place-items: center;
+    color: var(--gold);
+    font-size: 26px
+}
+
+.cup-card strong {
+    display: block;
+    font: 600 17px "Space Grotesk"
+}
+
+.cup-card small {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 4px
+}
+
+.honor-roll {
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--surface)
+}
+
+.honor-row {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 38px);
+    gap: 4px;
+    align-items: center;
+    padding: 14px 12px;
+    border-bottom: 1px solid var(--line)
+}
+
+.honor-row:last-child {
+    border: 0
+}
+
+.honor-name {
+    font: 600 13px "Space Grotesk"
+}
+
+.honor-stat {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px
+}
+
+.honor-head {
+    background: #102238;
+    color: #6f88a1;
+    font-size: 9px;
+    font-weight: 700
+}
+
+.history {
+    display: grid;
+    gap: 9px
+}
+
+.season-card {
+    display: grid;
+    grid-template-columns: 76px 1fr auto;
+    gap: 12px;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    border-radius: 16px
+}
+
+.season-year {
+    font: 600 13px "Space Grotesk"
+}
+
+.season-winner {
+    font-size: 13px;
+    font-weight: 600
+}
+
+.season-meta {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 4px
+}
+
+.season-cup {
+    text-align: right;
+    color: var(--gold);
+    font-size: 10px
+}
+
+.season-cup strong {
+    display: block;
+    color: var(--text);
+    font-size: 12px;
+    margin-top: 2px
+}
+
+.chart-wrap {
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: var(--surface);
+    overflow: auto
+}
+
+.participation {
+    min-width: 560px;
+    padding: 16px
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 150px repeat(5, 1fr);
+    min-height: 38px;
+    align-items: center;
+    border-bottom: 1px solid #18304a
+}
+
+.grid-row:last-child {
+    border: 0
+}
+
+.grid-cell {
+    font-size: 10px;
+    color: var(--muted);
+    text-align: center
+}
+
+.grid-cell:first-child {
+    text-align: left;
+    color: var(--text);
+    font-weight: 600
+}
+
+.grid-head .grid-cell {
+    font-size: 9px;
+    font-weight: 700;
+    color: #6f88a1
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #284761;
+    display: inline-block
+}
+
+.dot.active {
+    background: var(--cyan);
+    box-shadow: 0 0 12px #38bdf855
+}
+
+@media(min-width:700px) {
+    .home-actions {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .page-intro {
+        padding-top: 52px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    * {
+        transition: none !important
+    }
+}
