@@ -2,52 +2,73 @@
   "squadre": [
     {
       "id": "ac-campati",
-      "nome": "AC campati",
+      "nome": {
+        "common": "AC campati"
+      },
       "abbreviazione": "ACC"
     },
     {
       "id": "the-notorious-tmb",
-      "nome": "The Notorious TMB",
+      "nome": {
+        "common": "The Notorious TMB"
+      },
       "abbreviazione": "TMB"
     },
     {
       "id": "real-spansettek",
-      "nome": "Real Spansettek",
+      "nome": {
+        "common": "Real Spansettek",
+        "2024/25": "A.C. BOFFO D10CAN"
+      },
       "abbreviazione": "RSP"
     },
     {
       "id": "naples1926",
-      "nome": "NAPLES1926",
+      "nome": {
+        "common": "NAPLES1926"
+      },
       "abbreviazione": "NAP"
     },
     {
       "id": "dea-team",
-      "nome": "DEA TEAM",
+      "nome": {
+        "common": "DEA TEAM"
+      },
       "abbreviazione": "DEA"
     },
     {
       "id": "aston-birra",
-      "nome": "Aston Birra",
+      "nome": {
+        "common": "Aston Birra"
+      },
       "abbreviazione": "AST"
     },
     {
       "id": "bayer-semperduren",
-      "nome": "Bayer semperduren",
+      "nome": {
+        "common": "Bayer semperduren"
+      },
       "abbreviazione": "BSD"
     },
     {
       "id": "isotopi",
-      "nome": "isotopi",
+      "nome": {
+        "common": "isotopi"
+      },
       "abbreviazione": "ISO"
     },
     {
       "id": "team-rex",
-      "nome": "Team Rex",
+      "nome": {
+        "common": "Team Rex"
+      },
       "abbreviazione": "REX"
     },
     {
       "id": "cn-69",
-      "nome": "CN 69",
+      "nome": {
+        "common": "CN 69"
+      },
       "abbreviazione": "C69"
     }
   ]

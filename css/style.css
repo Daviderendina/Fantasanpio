@@ -420,8 +420,15 @@ footer {
 }
 
 .season-winner {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600
+}
+
+.season-non-winner {
+    font-size: 11px;
+    font-weight: 300;
+    color: var(--muted);
+
 }
 
 .season-meta {
@@ -435,6 +442,7 @@ footer {
     color: var(--gold);
     font-size: 10px
 }
+
 
 .season-cup strong {
     display: block;
@@ -454,6 +462,42 @@ footer {
     min-width: 560px;
     padding: 16px
 }
+
+.line-row {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  
+  .line-team {
+    font: 600 13px "Space Grotesk";
+    color: var(--text);
+  }
+  
+  .line-track {
+    display: flex;
+    gap: 6px;
+  }
+  
+  .line-seg {
+    flex: 1;
+    height: 10px;
+    border-radius: 6px;
+    background: #284761;
+    transition: .25s;
+  }
+  
+  .line-seg.on {
+    background: var(--cyan);
+    box-shadow: 0 0 10px #38bdf855;
+  }
+  
+
+
+
 
 .grid-row {
     display: grid;
