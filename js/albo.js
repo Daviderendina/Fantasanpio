@@ -101,18 +101,19 @@ function renderHistory(s, t) {
 //   </div>
 //   <div class="season-cup">COPPA<strong>${x.coppa ? getTeamName(t[x.coppa], x.anno) : '-'}</strong></div>
 // </article>
+// <span class="season-cup">COPPA</span>&nbsp 
+// 🥈 🥉 
     s.map(x => `     
       <article class="season-card">
         <div class="season-year">${x.anno}</div>
           <div>
             <span class="season-winner">🥇 ${getTeamName(t[x.campione], x.anno)} </span>
-            <span class="season-non-winner">&nbsp&nbsp·&nbsp&nbsp🥈 ${getTeamName(t[x.secondo], x.anno)} </span>
-            <span class="season-non-winner">&nbsp&nbsp·&nbsp&nbsp🥉 ${getTeamName(t[x.terzo], x.anno)} </span>
+            <span class="season-non-winner">&nbsp·&nbsp${getTeamName(t[x.secondo], x.anno)} </span>
+            <span class="season-non-winner">&nbsp·&nbsp${getTeamName(t[x.terzo], x.anno)} </span>
             ${x.coppa ? `
               </br>
-              <span class="season-cup">COPPA</span>&nbsp 
-              <span class="season-winner">${getTeamName(t[x.coppa], x.anno)}</span>
-              <span class="season-non-winner">&nbsp&nbsp·&nbsp&nbsp ${getTeamName(t[x.secondocoppa], x.anno)}</span>
+              <span class="season-winner">🏆 ${getTeamName(t[x.coppa], x.anno)}</span>
+              <span class="season-non-winner">&nbsp·&nbsp ${getTeamName(t[x.secondocoppa], x.anno)}</span>
               ` : ''}
           </div>
         </div>

@@ -406,8 +406,7 @@ footer {
 
 .season-card {
     display: grid;
-    grid-template-columns: 76px 1fr auto;
-    gap: 12px;
+    grid-template-columns: 68px 1fr auto;
     align-items: center;
     padding: 15px;
     border: 1px solid var(--line);
