@@ -52,8 +52,9 @@ async function load() {
     document.querySelector('#champion-podium').innerHTML =
       e.map(a => `
         <div class="podium-place ${a[1]}">
+          <div class="medal">${a[2]}</div>
           <div class="podium-team">${t[x[a[0]]].nome}</div>
-          <div class="podium-block">${a[3]}</div>
+          <div class="podium-block" id="${a[1]}">${a[3]}</div>
         </div>
       `).join('');
   }
@@ -61,17 +62,18 @@ async function load() {
   function renderCup(x, t, st) {
     if (!x.coppa || !t[x.coppa]) {
       document.querySelector('#cup-podium').innerHTML =
-        `<div class="cup-icon">♛</div><div><strong>Nessuna coppa</strong></div>`;
+        `<div class="cup-icon">🏆</div><div><strong>Nessuna coppa</strong></div>`;
       return;
     }
   
     document.querySelector('#cup-podium').innerHTML = `
-      <div class="cup-icon">♛</div>
+      <div class="cup-icon">🏆</div>
       <div>
         <strong>${t[x.coppa].nome}</strong>
         <small>
-          Vincitore ${x.anno} · ${st[x.coppa].c}
-          ${st[x.coppa].c === 1 ? 'vittoria' : 'vittorie'}
+          Vincitore coppa
+          &nbsp&nbsp·&nbsp&nbsp
+          Secondo classificato <b>${t[x.secondocoppa].nome}</b>
         </small>
       </div>
     `;

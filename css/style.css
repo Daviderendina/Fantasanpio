@@ -286,7 +286,7 @@ footer {
 .podium-team {
     font: 600 13px "Space Grotesk";
     line-height: 1.2;
-    margin-bottom: 8px
+    margin-bottom: 16px
 }
 
 .podium-year {
@@ -307,18 +307,21 @@ footer {
 }
 
 .place-1 .podium-block {
-    height: 112px;
-    color: var(--gold)
+    height: 102px;
+    color: var(--gold);
+    font: 700 32px "Space Grotesk"
 }
 
 .place-2 .podium-block {
-    height: 78px;
-    color: var(--silver)
+    height: 68px;
+    color: var(--silver);
+    font: 600 22px "Space Grotesk"
 }
 
 .place-3 .podium-block {
-    height: 58px;
-    color: var(--bronze)
+    height: 48px;
+    color: var(--bronze);
+    font: 500 16px "Space Grotesk"
 }
 
 .medal {
