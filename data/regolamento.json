@@ -9,48 +9,286 @@
       "nome": "Asta"
     },
     {
-      "id": "formazioni",
-      "nome": "Formazioni"
-    },
-    {
       "id": "mercato",
       "nome": "Mercato"
     },
     {
       "id": "coppa",
       "nome": "Coppa"
+    },
+    {
+      "id": "asta_riparazione",
+      "nome": "Asta Riparazione"
+    },
+    {
+      "id": "infortuni_gravi",
+      "nome": "Infortuni Gravi"
     }
   ],
   "regole": [
     {
       "id": 1,
-      "categoria": "generale",
+      "categorie": ["generale"],
       "titolo": "Composizione della lega",
-      "descrizione": "La lega è composta da 8 squadre. Ogni squadra affronta le altre durante la stagione."
+      "descrizione": "La lega è composta da 8 squadre."
     },
     {
       "id": 2,
-      "categoria": "asta",
-      "titolo": "Asta iniziale",
-      "descrizione": "Ogni fantallenatore parte con 500 crediti e deve costruire una rosa completa."
+      "categorie": ["generale"],
+      "titolo": "Quota di partecipazione",
+      "descrizione": "La quota è di 100€ per squadra: 80€ sono destinati al campionato e 20€ alla Coppa."
     },
     {
       "id": 3,
-      "categoria": "formazioni",
-      "titolo": "Consegna della formazione",
-      "descrizione": "La formazione deve essere consegnata entro l'inizio della prima partita della giornata."
-    },
-    {
-      "id": 4,
-      "categoria": "mercato",
-      "titolo": "Mercato di riparazione",
-      "descrizione": "Sono previste finestre di mercato durante la stagione. Le date vengono comunicate dalla lega."
+      "categorie": ["generale"],
+      "titolo": "Montepremi",
+      "descrizione": "Il montepremi del campionato assegna 360€ al 1° classificato, 180€ al 2° e 100€ al 3°. /n Il montepremi della Coppa assegna 140€ al 1° classificato e 20€ al 2°."
     },
     {
       "id": 5,
-      "categoria": "coppa",
-      "titolo": "Formato della Coppa",
-      "descrizione": "La Coppa si disputa con una fase a eliminazione secondo il calendario definito a inizio stagione."
+      "categorie": ["generale"],
+      "titolo": "Spareggi del campionato",
+      "descrizione": "In caso di parità di punti, si considerano nell'ordine il punteggio totale, gli scontri diretti, i gol fatti, le vittorie totali, la differenza reti, i gol subiti"
+    },
+    {
+      "id": 6,
+      "categorie": ["generale"],
+      "titolo": "Multe",
+      "descrizione": "Se non si inserisce la formazione, si paga una multa di 5€. La cifra si alza a 15€ durante le ultime 5 giornate. Le somme raccolte sono destinate alla miglior giornata (numero massimo di punti) durante la stagione."
+    },
+    {
+      "id": 7,
+      "categorie": ["generale"],
+      "titolo": "Formazione non inserita",
+      "descrizione": "In caso di formazione non inserita, verrà recuperata automaticamente l'ultima formazione inserita utile"
+    },
+    {
+      "id": 8,
+      "categorie": ["generale"],
+      "titolo": "Cambi e panchina",
+      "descrizione": "Sono disponibili 5 cambi e non c'è un limite ai panchinari che si possono inserire."
+    },
+    {
+      "id": 9,
+      "categorie": ["generale"],
+      "titolo": "Partite rinviate",
+      "descrizione": "Se una partita viene rinviata, si attende che venga disputata prima di calcolare la giornata."
+    },
+    {
+      "id": 10,
+      "categorie": ["generale"],
+      "titolo": "Indisponibilità durante l'attesa del recupero",
+      "descrizione": "Se un giocatore schierato nella partita rinviata diventa indisponibile durante l'attesa del recupero per infortunio, squalifica o cambio di squadra, riceve 6 politico."
+    },
+    {
+      "id": 11,
+      "categorie": ["generale"],
+      "titolo": "Giocatori ceduti all'estero",
+      "descrizione": "I calciatori ceduti all'estero ricevono 6 politico fino al momento dell'asta. Nel caso in cui vengano ceduti dopo l'asta, riceveranno 6 politico fino al termine della stagione"
+    },
+    {
+      "id": 13,
+      "categorie": ["asta"],
+      "titolo": "Crediti per l'asta",
+      "descrizione": "Ogni fantallenatore dispone di 500 crediti per l'asta iniziale."
+    },
+    {
+      "id": 100,
+      "categorie": ["asta_riparazione"],
+      "titolo": "Crediti per l'asta",
+      "descrizione": "Per l'asta di riparazione sono previsti 50 crediti aggiuntivi."
+    },
+    {
+      "id": 14,
+      "categorie": ["asta"],
+      "titolo": "Composizione della rosa",
+      "descrizione": "La rosa deve essere composta da 3 portieri, 8 difensori, 8 centrocampisti e 6 attaccanti."
+    },
+    {
+      "id": 15,
+      "categorie": ["asta"],
+      "titolo": "Turno di chiamata",
+      "descrizione": "È obbligatorio rispettare il giro di chiamata. L'ordine viene comunicato prima dell'asta e non è consentito saltare il proprio turno."
+    },
+    {
+      "id": 18,
+      "categorie": ["asta_riparazione"],
+      "titolo": "Comunicazione degli svincoli",
+      "descrizione": "Gli svincoli per l'asta di riparazione vengono comunicati prima dell'inizio dell'asta."
+    },
+    {
+      "id": 19,
+      "categorie": ["generale"],
+      "titolo": "Consegna della formazione",
+      "descrizione": "La formazione deve essere inserita entro 1 minuto prima dell'inizio della partita."
+    },
+    {
+      "id": 20,
+      "categorie": ["generale"],
+      "titolo": "Mancato inserimento della formazione",
+      "descrizione": "Se la formazione non viene inserita, viene recuperata automaticamente quella della giornata precedente."
+    },
+    {
+      "id": 21,
+      "categorie": ["generale"],
+      "titolo": "Moduli consentiti",
+      "descrizione": "Sono consentiti i moduli 3-4-3, 3-5-2, 4-3-3, 4-4-2, 4-5-1, 5-3-2 e 5-4-1."
+    },
+    {
+      "id": 22,
+      "categorie": ["generale"],
+      "titolo": "Bonus e malus",
+      "descrizione": "I bonus sono: +1 per assist, +3 per gol, +3 per rigore parato e +1 per portiere imbattuto. /n I malus sono: -1 per gol subito, -0,5 per ammonizione, -1 per espulsione, -3 per autogol, -2 per il portiere e -3 per rigore sbagliato."
+    },
+    {
+      "id": 24,
+      "categorie": ["generale"],
+      "titolo": "Conversione dei punti in gol",
+      "descrizione": "Si assegna un gol ogni 6 punti, a partire da 66 punti."
+    },
+    {
+      "id": 25,
+      "categorie": ["generale"],
+      "titolo": "Modificatore di difesa",
+      "descrizione": "Il modificatore si applica se il portiere e almeno 4 difensori portano punteggio alla squadra. Si calcola sulla media voto del portiere e dei 3 migliori difensori, escludendo bonus e malus."
+    },
+    {
+      "id": 28,
+      "categorie": ["generale"],
+      "titolo": "Posizione dei 6 politici in panchina",
+      "descrizione": "I 6 politici devono essere sempre collocati in fondo alla panchina."
+    },
+    {
+      "id": 29,
+      "categorie": ["infortuni_gravi"],
+      "titolo": "Definizione di grave infortunio",
+      "descrizione": "Un giocatore è considerato gravemente infortunato se salta almeno 8 partite consecutive."
+    },
+    {
+      "id": 30,
+      "categorie": ["infortuni_gravi"],
+      "titolo": "Conteggio delle partite saltate",
+      "descrizione": "Per conteggiare le partite saltate si utilizzano esclusivamente i pallini viola sulla scheda del giocatore."
+    },
+    {
+      "id": 31,
+      "categorie": ["infortuni_gravi"],
+      "titolo": "Sostituzione del giocatore infortunato",
+      "descrizione": "Dalla 9ª giornata, il giocatore gravemente infortunato può essere sostituito con un altro giocatore dello stesso ruolo e della stessa squadra. Se non ci sono giocatori disponibili della stessa squadra, se ne può scegliere uno qualsiasi dal listone."
+    },
+    {
+      "id": 32,
+      "categorie": ["infortuni_gravi"],
+      "titolo": "Rientro del giocatore infortunato",
+      "descrizione": "Quando il giocatore gravemente infortunato rientra, viene ripreso in squadra e si restituisce il sostituto."
+    },
+    {
+      "id": 33,
+      "categorie": ["asta_riparazione", "infortuni_gravi"],
+      "titolo": "Svincolo aggiuntivo per infortunio grave",
+      "descrizione": "Se in un ruolo è presente un giocatore gravemente infortunato, si può svincolare un giocatore aggiuntivo in quel ruolo. Per esempio, con un difensore gravemente infortunato si possono svincolare fino a 3 difensori."
+    },
+    {
+      "id": 34,
+      "categorie": ["asta_riparazione", "infortuni_gravi"],
+      "titolo": "Giocatori gravemente infortunati non svincolati",
+      "descrizione": "I giocatori gravemente infortunati che non vengono svincolati durante l'asta invernale non possono essere sostituiti."
+    },
+    {
+      "id": 35,
+      "categorie": ["asta_riparazione", "infortuni_gravi"],
+      "titolo": "Gestione della sostituzione all'asta di gennaio",
+      "descrizione": "Se è stato effettuato un cambio per grave infortunio, all'asta di gennaio è obbligatorio riprendere il giocatore infortunato e restituire il sostituto."
+    },
+    {
+      "id": 36,
+      "categorie": ["asta_riparazione", "infortuni_gravi"],
+      "titolo": "Giocatore già infortunato acquistato a gennaio",
+      "descrizione": "Se all'asta di gennaio si acquista un giocatore già infortunato, il conteggio delle giornate parte dalla giornata successiva all'asta."
+    },
+    {
+      "id": 37,
+      "categorie": ["asta_riparazione"],
+      "titolo": "Limiti agli svincoli di gennaio",
+      "descrizione": "All'asta di gennaio si possono svincolare al massimo 1 portiere, 2 difensori, 2 centrocampisti e 2 attaccanti (esclusi i giocatori gravemente infortunati)."
+    },
+    {
+      "id": 40,
+      "categorie": ["asta_riparazione"],
+      "titolo": "Rimborso per trasferimento all'estero",
+      "descrizione": "Se un giocatore viene trasferito all'estero, si recupera l'intero valore pagato in estate."
+    },
+    {
+      "id": 41,
+      "categorie": ["asta_riparazione"],
+      "titolo": "Rimborso per svincolo volontario",
+      "descrizione": "Se si svincola volontariamente un giocatore, si recupera la metà del valore pagato in estate. Questo vale per tutti i casi ad eccezione del trasferimento all'estero."
+    },
+    {
+      "id": 45,
+      "categorie": ["coppa"],
+      "titolo": "Calcolo dei supplementari",
+      "descrizione": "I gol nei supplementari sono determinati da una tabella di conversione basata sulla fantamedia aritmetica dei 4 migliori panchinari non subentrati. I portieri in panchina non vengono conteggiati."
+    },
+    {
+      "id": 46,
+      "categorie": ["coppa"],
+      "titolo": "Voti mancanti nei supplementari",
+      "descrizione": "Se ci sono meno di 4 giocatori con fantavoto utile, si aggiunge un voto convenzionale di 5,5 per ogni posto mancante fino a raggiungere 4 giocatori."
+    },
+    {
+      "id": 47,
+      "categorie": ["coppa"],
+      "titolo": "Tabella di conversione dei supplementari",
+      "descrizione": "Una fantamedia da 0 a 6,49 assegna 0 gol; da 6,5 a 6,99 assegna 1 gol; da 7 a 7,49 assegna 2 gol. Per ogni ulteriore incremento di 0,5 punti si assegna un gol."
+    },
+    {
+      "id": 48,
+      "categorie": ["coppa"],
+      "titolo": "Gol in trasferta",
+      "descrizione": "Nelle sfide di andata e ritorno resta valido il criterio dei gol in trasferta, anche dopo i supplementari. Il criterio non si applica alle finali in gara secca."
+    },
+    {
+      "id": 49,
+      "categorie": ["coppa"],
+      "titolo": "Soglia per segnare un rigore",
+      "descrizione": "Se la sfida è ancora in parità dopo i supplementari, si procede ai rigori. Il calciatore segna se il suo voto netto, senza bonus e malus, è almeno 6; sbaglia se è inferiore a 6."
+    },
+    {
+      "id": 50,
+      "categorie": ["coppa"],
+      "titolo": "Serie dei rigori",
+      "descrizione": "Ogni squadra tira inizialmente 5 rigori. Se la parità persiste, si procede a oltranza con un rigore per squadra, interrompendo la serie quando una squadra passa in vantaggio."
+    },
+    {
+      "id": 51,
+      "categorie": ["coppa"],
+      "titolo": "Ordine dei rigoristi nelle leghe Classic",
+      "descrizione": "L'ordine è: attaccanti titolari con voto valido, centrocampisti titolari con voto valido, difensori titolari con voto valido, portiere titolare con voto valido e riserve subentrate con voto valido. Si rispetta l'ordine di schieramento e di panchina."
+    },
+    {
+      "id": 52,
+      "categorie": ["coppa"],
+      "titolo": "Ordine dei rigoristi nelle leghe Mantra",
+      "descrizione": "Si parte dai titolari della linea d'attacco e si procede a ritroso. All'interno di ciascuna linea si segue l'ordine da destra a sinistra dello schieramento. Seguono le riserve subentrate con voto valido, secondo l'ordine di panchina."
+    },
+    {
+      "id": 53,
+      "categorie": ["coppa"],
+      "titolo": "Ordine dei tiratori nello schieramento",
+      "descrizione": "All'interno di una linea di gioco, l'ordine procede da destra a sinistra dello schieramento; nell'app corrisponde al movimento dal basso verso l'alto del display."
+    },
+    {
+      "id": 54,
+      "categorie": ["coppa"],
+      "titolo": "Rigore senza tiratore valido",
+      "descrizione": "Se una squadra dispone di un tiratore con voto valido e l'altra no, il rigore della squadra senza tiratore viene considerato sbagliato."
+    },
+    {
+      "id": 55,
+      "categorie": ["coppa"],
+      "titolo": "Ulteriore parità dopo i rigori",
+      "descrizione": "Se la parità persiste dopo i rigori, si effettua una nuova tornata con soglia di realizzazione pari a un voto netto di almeno 6,5. Si riparte da una serie completa di 5 rigori e, se necessario, si prosegue a oltranza."
     }
   ]
 }
